@@ -15,11 +15,10 @@ public class MyFirstTest {
 
     }
 
-    //@Test
-    //void test02Selenide() {
-        //open("https://ru.wikipedia.org/wiki/Selenium");
-        //sleep(10_000);
-        //$(By.tagName("body")).shouldHave(text("Selenide"));
-    //}
+    @Test
+    void test02Selenide() {
+    open("https://ru.wikipedia.org/wiki/Selenium");
+    sleep(10_000);
+    $(By.tagName("body")).shouldHave(text("Selenide"));
+    }
 }
-
