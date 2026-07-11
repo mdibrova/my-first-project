@@ -14,6 +14,7 @@ public class SearchElementCSSTest {
         //Поиск по ID
         $(By.id("submit-button")).shouldBe(visible);
 
+
         $(By.id("user-password")).shouldBe(visible);
 
 
