@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class AuthorizationTests {
     @Test
-    void test01Authorization01(){
+    void test01LoginSuccess(){
         //Успешная авторизация
         open("https://slqamsk.github.io/cases/slflights/v01/");
         $(By.id("username")).sendKeys("problem_user");
@@ -17,7 +17,7 @@ public class AuthorizationTests {
     }
 
     @Test
-    void test01Authorization02(){
+    void test02LoginWrongPassword(){
         //Неуспешная авторизация
         open("https://slqamsk.github.io/cases/slflights/v01/");
         $(By.id("username")).sendKeys("problem_user");
