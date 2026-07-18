@@ -40,10 +40,14 @@ public class FreeCalcTests {
         sleep(3_000);
         $("input[name=sum]").clear();
 
+        //добавить проверку
+
         //Второй расчет
         $("input[name=sum]").sendKeys("500");
         $("[name=submit]").click();
         sleep(3_000);
         // $("input[name=sum]").clear();
+
+        //добавить проверку
     }
 }
